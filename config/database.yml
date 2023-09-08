@@ -83,7 +83,7 @@ production:
   url: <%= ENV['DATABASE_URL'] %>
 <% else %>
   <<: *default
-  database: journal_production
+  database: journal
   username: journal
   password: <%= ENV['JOURNAL_DATABASE_PASSWORD'] %>
 <% end %>
